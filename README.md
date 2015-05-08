@@ -7,8 +7,8 @@ Author: Gertjan van den Burg
 
 This code is released under the GPL License (v2) (see LICENSE).
 
-See also: [ESEBeamer](http://github.com/GjjvdBurg/ESEBeamer).
-See also: [ESEBeamerPoster](http://github.com/GjjvdBurg/ESEBeamerPoster).
+See also: [ESEBeamer](http://github.com/GjjvdBurg/ESEBeamer) and  
+[ESEBeamerPoster](http://github.com/GjjvdBurg/ESEBeamerPoster).
 
 Usage
 -----
