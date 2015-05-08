@@ -43,7 +43,7 @@ Installation
          Summarizing:
 
              mkdir -p ~/texmf/tex/latex/beamer
-	     git clone https://github.com/GjjvdBurg/EURBeamer.git ~/texmf/tex/latex/beamer/erasmus
+             git clone https://github.com/GjjvdBurg/EURBeamer.git ~/texmf/tex/latex/beamer/erasmus
              sudo texhash
 
 - Windows: See http://tex.stackexchange.com/a/2066. Create a tex folder 
