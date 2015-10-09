@@ -108,11 +108,13 @@
 		\pgfsetcolor{EURGreen}
 		\pgfusepath{stroke}
 		\pgftext[at=\pgfpoint{.144\paperwidth-0.1pt}{-1.0\paperheight},center,base]{\pgfuseimage{small-logo}}
-		\pgfpathmoveto{\pgfpoint{.0876\paperwidth}{0\paperheight}}
-		\pgfpathlineto{\pgfpoint{.0876\paperwidth}{-\beamer@headheight-1pt}}
+		\pgfpathmoveto{\pgfpoint{.0876\paperwidth+.1pt}{0\paperheight}}
+		\pgfpathlineto{%
+			\pgfpoint{.0876\paperwidth+.1pt}{-\beamer@headheight-0pt}
+		}
 		\pgfsetlinewidth{.1810\paperwidth}
 		\pgfsetinnerlinewidth{0pt}
-		\pgfsetcolor{white}
+		\pgfsetcolor{EURGreen}
 		\pgfusepath{stroke}
 	\end{pgfpicture}%
 }
