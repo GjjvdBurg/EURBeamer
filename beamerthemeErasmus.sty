@@ -112,9 +112,15 @@
 		\pgfpathlineto{%
 			\pgfpoint{.0876\paperwidth+.1pt}{-\beamer@headheight-0pt}
 		}
-		\pgfsetlinewidth{.1810\paperwidth}
 		\pgfsetinnerlinewidth{0pt}
+		\if@titlegreen
+		\pgfsetlinewidth{.1850\paperwidth}
 		\pgfsetcolor{EURGreen}
+		\else
+		\pgfsetlinewidth{.1800\paperwidth}
+		\pgfsetcolor{white}
+		\fi
+
 		\pgfusepath{stroke}
 	\end{pgfpicture}%
 }
@@ -171,11 +177,11 @@
 	\end{beamercolorbox}
 	\vfill
 	\if@titletoc
-	
+
 	\begin{columns}
 		\column{.30\linewidth}
 		\setbeamertemplate{section in toc}{{\quad\scriptsize
-			\inserttocsectionnumber.~		
+			\inserttocsectionnumber.~
 			\inserttocsection}}
 		\makeatletter
 		\patchcmd{\beamer@sectionintoc}{\vskip1.5em}{\vskip-0.2em}{}{}
@@ -233,4 +239,3 @@
 \setbeamercolor{block body alerted}{bg=EURGreen!15!white}
 \setbeamercolor{block title example}{bg=EURGreen!80!white}
 \setbeamercolor{block body example}{bg=EURGreen!15!white}
-
