@@ -38,11 +38,13 @@
 \newif\if@titlegreen
 \newif\if@logogreen
 \newif\if@titletoc
+\newif\if@nologo
 \DeclareOption{emphasizegreen}{\@emphasizegreentrue}
 \DeclareOption{structgreen}{\@structgreentrue}
 \DeclareOption{titlegreen}{\@titlegreentrue}
 \DeclareOption{logogreen}{\@logogreentrue}
 \DeclareOption{titletoc}{\@titletoctrue}
+\DeclareOption{nologo}{\@nologotrue}
 \DeclareOption*{\PackageWarning{beamerthemeErasmus}{Unknown option 
 		`\CurrentOption'}}
 \ProcessOptions\relax
@@ -74,7 +76,11 @@
 \else
 \pgfdeclareimage[width=.5\paperwidth]{main-logo}{EURlogo_zw.pdf}
 \fi
+\if@nologo
+\titlegraphic{}
+\else
 \titlegraphic{\pgfuseimage{main-logo}}
+\fi
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Frame title definitions 
